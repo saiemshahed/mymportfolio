@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta class="img">
+    <link rel="stylesheet" href="src/css/tailwind.css">
+    <!-- <link rel="stylesheet" href="./src/css/custome.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/others.css">
+    <link rel="stylesheet" href="./src/css/color.css">
+</head>
+<body>
+    <nav class="hidden lg:block bg-gradient-to-r from-indigo-800 via-purple-800 to-pink-800 py-2 inset-x-0 bg:opacity-75 z-50 fixed">
+        <div class="container mx-auto flex justify-around items-center">
+            <div class="w-16 h-10">
+                <img src="./src/img/logo/salem-logo.png" alt="">
+            </div>
+            <div class="flex justify-around gap-6">
+                <a href="#" class="text-gray-300 px-4 py-2 hover:text-white font-bold"> Home</a>
+                <a href="#" class="text-gray-300 px-4 py-2 hover:text-white font-bold"> About Me</a>
+
+                <a href="#" class="text-gray-300 px-4 py-2 hover:text-white font-bold"> Projects</a>
+                <a href="#" class="text-gray-300 px-4 py-2 hover:text-white font-bold"> Blogs</a>
+                <a href="#" class="text-gray-300 px-4 py-2 hover:text-white font-bold"> Resume</a>
+                <a href="#" class="text-gray-300 px-4 py-2 hover:text-white font-bold"> Contact</a>
+
+            </div>
+
+        </div>
+    </nav>
+
+<!-- phone -->
+<div class="lg:hidden">
+    <nav class="py-4 bg-gradient-to-r from-indigo-800 via-purple-800 to-pink-800 flex flex-wrap justify-between container mx-auto inset-x-0 bg:opacity-75 fixed">
+        <div class="w-16 h-10">
+            <img src="./src/img/logo/salem-logo.png" alt="">
+        </div>
+      <div class="text-3xl mr-4 cursor-pointer" id="menu-btn">
+        <i class="fas fa-bars hover:text-gray-200"></i>
+      </div>
+
+    </nav>
+    
+    <div id="mobileMenu" class="lg:hidden overflow-hidden absolute inset-0 left-full bg-black opacity-80 transition-all duration-1000 ease-in-out">
+      <div class="flex justify-end text-4xl cursor-pointer p-4"><i id="closer" class="far fa-window-close text-white"></i></div>
+      <div class="flex flex-col items-center">
+      
+        <div class="w-full py-3 hover:bg-blue-800 text-center">
+
+            <a href="#" class="text-gray-300 px-4 py-2 hover:text-white font-bold"> Home</a>
+        </div>
+        <div class="w-full py-3 hover:bg-blue-800 text-center">
+
+            <a href="#" class="text-gray-300 px-4 py-2 hover:text-white font-bold"> About Me</a>
+        </div>
+        <div class="w-full py-3 hover:bg-blue-800 text-center">
+
+            <a href="#" class="text-gray-300 px-4 py-2 hover:text-white font-bold"> Projects</a>
+        </div>
+        <div class="w-full py-3 hover:bg-blue-800 text-center">
+
+            <a href="#" class="text-gray-300 px-4 py-2 hover:text-white font-bold"> Blogs</a>
+        </div>
+        <div class="w-full py-3 hover:bg-blue-800 text-center">
+
+            <a href="#" class="text-gray-300 px-4 py-2 hover:text-white font-bold"> Resume</a>
+        </div>
+        <div class="w-full py-3 hover:bg-blue-800 text-center">
+
+            <a href="#" class="text-gray-300 px-4 py-2 hover:text-white font-bold"> Contact</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- bannaer section -->
+  <section id="banner" class="lg:bg-center lg:py-0" style="background-image: url(./src/img/Banner/banner-3.jpg); background-position: center; background-size: cover; height: 100%;">
+    <div class="bg-black bg-opacity-10">
+
+        <div class="contaner mx-auto py-8">
+            <div class="lg:grid lg:grid-cols-2 gap-3">
+                <div class="text-center h-full py-16">
+                    <h1 data-aos="zoom-in-right" class="text-center font-bold text-2xl lg:text-3xl" style="color: brown !important;">My name is
+                        <span class="typer" id="main" data-words="Saiem" data-delay="100" data-deleteDelay="1000"></span>
+                        <span class="cursor" data-owner="main" style="color: white;"></span>
+                      </h1>
+                      <h1 data-aos="zoom-in-left" class="text-center hidden lg:block text-white font-bold text-2xl lg:text-4xl" style="color: #98619e !important;">I'm a 
+                        <span class="typer" id="main" text-color-main data-words="Web Designer" data-delay="100" data-deleteDelay="1000" style="color: wheat;"></span>
+                        <span class="cursor" data-owner="main"></span>
+                      </h1>   
+                      <div data-aos="fade-up" class="flex items-center justify-center">
+                        <a
+                        href="#personal"
+                        class="button button--winona p-0 hover:text-white relative block focus:outline-none border-2 border-solid rounded-lg text-sm text-center font-semibold uppercase tracking-widest align-middle overflow-hidden" style="background-color: #bd4361;" 
+                        data-text="Read More"
+                      >
+                        <span class="align-middle block">
+                          Read More
+                        </span>
+                      </a>
+                      </div>               
+                </div>
+    
+                <div data-aos="fade-up" class="w-64 flex justify-center items-center ml-20 lg:ml-0">
+                    <!-- <img src="./src/img/Banner/banner2.jpg" alt=""> -->
+                    <img src="./src/img/Banner/banner3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- personal section -->
+
+  <section id="personal" style="background-color: #98619e;
+  background-image: linear-gradient(135deg,#98619e,#bd4361); height: auto; margin-top: 0;">
+  <h2 class="text-center font-bold text-2xl lg:text-6xl py-4 text-white ">About Me</h2>
+    <div class="lg:grid lg:grid-cols-2 gap-5 gap-y-5 lg:gap-y-0 items-center justify-between">
+        <div data-aos="zoom-out-left" class="overflow-hidden">
+            <img src="./src/img/personal/personal1.jpg" alt="" class="w-80 object-cover lg:ml-60 lg:mt-4 lg:mb-4 ml-6 border border-dashed personal_img">
+        </div>
+        <div class="mt-5 lg:mt-0">
+            <p class="font-serif text-white">Have an incredible design that needs to be transformed into a website? Or you have only an idea and need a website immediately? Want some cool featured added to your site but don’t know where to begin? I’d love to help!</p>
+            <p class="font-serif text-white">I am Saiem from Bangladesh. I have finished my graduation from Bangladesh University OF business & Technology (Bubt) on Computer Science & Software Engineering and I have taken many lessons on modern web designing from this famous institution. My education background allowed me to thrive in this career and my trainings on this have made me a master of this section.</p>
+            <div class="flex items-center justify-center">
+                <a
+                href="#personal"
+                class="button button--winona p-0 hover:text-white relative block focus:outline-none border-2 border-solid rounded-lg text-sm text-center font-semibold uppercase tracking-widest align-middle overflow-hidden" style="background-color: #7c2e7c;" 
+                data-text="Download Portfolio"
+              >
+                <span class="align-middle block">
+                 Download Portfolio
+                </span>
+              </a>
+              </div> 
+        </div>
+    </div>
+  </section>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+<script src="./src/js/main.js"></script>
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>
+
+
+ 

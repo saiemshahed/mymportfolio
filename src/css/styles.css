@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './others.css';
+@import './color.css';
+
+.open{
+    @apply left-0
+  }
